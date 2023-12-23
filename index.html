@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark</title>
+    <!-- &------------------FAV ICON--------------- -->
+    <link rel="shortcut icon" href="imgs/bookmark.png" type="image/x-icon" />
+    <!-- &-------------------FONTAWESOME CSS FILE-------------- -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- &-------------------BOOTSTRAP CSS FILE-------------- -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- &-------------------CUSTOM CSS FILE-------------- -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="my-5 text-center">Bookmarker</h1>
+
+      <div class="main-box py-4">
+        <h2 class="text-center mb-5">
+          <i class="fa-solid fa-bookmark"></i>
+          Bookmark your favorite sites
+          <i class="fa-solid fa-bookmark"></i>
+        </h2>
+
+        <div class="mb-4">
+          <label for="name" class="fw-bold fs-6">
+            <i class="fa-solid fa-book-bookmark me-2"></i>
+            Site Name</label
+          >
+          <input
+            type="text"
+            id="name"
+            class="form-control my-1"
+            placeholder="Bookmark Name"
+          />
+        </div>
+
+        <div>
+          <label for="url" class="fw-bold fs-6">
+            <i class="fa-solid fa-link"></i>
+            Site URL</label
+          >
+          <input
+            type="text"
+            id="url"
+            class="form-control my-1"
+            placeholder="Website Url "
+          />
+        </div>
+
+        <button class="btn d-block m-auto mt-3" id="submitBtn">Submit</button>
+      </div>
+
+      <table class="table mt-5">
+        <thead>
+          <th>Index</th>
+          <th>Website Name</th>
+          <th>Visit</th>
+          <th>Delete</th>
+        </thead>
+        <tbody id="tbody" class="p-4"></tbody>
+      </table>
+    </div>
+
+    <!-- &-------------------BOOTSTRAP JS FILE-------------- -->
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <!-- &-------------------MAIN JS FILE-------------- -->
+    <script src="JS/index.js"></script>
+  </body>
+</html>
